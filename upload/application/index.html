@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>업로드 테스트</title>
+</head>
+<body>
+<h3>PHP 파일 업로드</h3>
+<ul>
+<li><a href="up/upload.php">업로드 페이지</a></li>
+<li><a href="up/file_list.php">업로드 파일 목록</a></li>
+</ul>
+<div>
+<pre>
+CREATE TABLE upload_file (
+  file_id   VARCHAR(255) NOT NULL PRIMARY KEY,
+  name_orig VARCHAR(255),
+  name_save VARCHAR(255),
+  reg_time  TIMESTAMP NOT NULL
+);
+</pre>
+</div>
+</body>
+</html>
